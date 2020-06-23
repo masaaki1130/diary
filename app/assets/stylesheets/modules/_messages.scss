@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+
+.Header {
+  height: 60px;
+  width: 100%;
+  background-color: #f08080;
+}
+
+.box {
+  height: 60px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+
+&__small{
+  height: 40px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+}
+.Icons {
+  height: 60px;
+  width: 150px;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  &__icon {
+    height: 60px;
+    width: 50px;
+    float: left;
+    font-size: 20px;
+    line-height: 60px;
+    text-align: center;
+
+    &--trash {
+      color: #444;
+    }
+
+    &--cog {
+      color: #444;
+    }
+
+    &--plus {
+      color: #fff;
+    }
+  }
+}
+
+.Contents {
+  height: 90vh;
+  width:900px;
+  margin: 0 auto;
+  background-color: #fffacd;
+  padding: 35px 40px 0px;
+}
+.Icon{
+  padding: 40px;
+  color:#ffa500;
+  font-size:30px;
+  text-align: center;
+  display: flex;
+
+  &__icons{
+    height: 60px;
+    width: 50px;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.Wrapper{
+  display: flex;
+}
+.calendar {
+  height: calc(100vh - 60px);
+  width: 20vw;
+  padding: 20px 10px;
+  background-color: #fffacd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Chat {
+  height: calc(100vh - 60px);
+  width: 80vw;
+  background-color: #ffe4e1;
+}
+
+.MessageField {
+  height: calc(100vh - 120px);
+  width: 100%;
+  padding: 20px;
+  overflow: scroll;
+}
+
+.MessageBox {
+  background-color: #fff5ee;
+  margin-bottom: 10px;
+  padding: 10px;
+  color: #444;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.Message{
+  width: 100%;
+}
+
+.MessageInfo{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  &__userName {
+    font-size: 12px;
+    margin-right: 10px;
+  }
+  &__date {
+    font-size: 12px;
+  }
+}
+.Footer{
+  height: 60px;
+  width: 100%;
+  padding: 10px;
+  background-color: #e5ffcc;
+}
+
+.Form {
+  display: flex;
+  &__inputContent {
+    height: 40px;
+    font-size: 16px;
+    padding: 5px;
+    width: calc(100% - 100px);
+    border-radius: 5px;
+    border: solid 1px #ff9393;
+  }
+  &__submit {
+    height: 40px;
+    width: 60px;
+    margin-left: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: solid 1px #ff7f7f;
+    background-color: #bfff7f;
+
+  }
+}

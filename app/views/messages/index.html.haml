@@ -1,0 +1,35 @@
+.Header
+  .box
+    .box__small
+      エクササイズ
+  .Icons
+    .Icons__icon
+      .Icons__icon--trash
+        = icon('fas', 'user')
+    .Icons__icon
+      .Icons__icon--cog
+        = icon('fas', 'book-open')
+    .Icons__icon
+      .Icons__icon--cog
+        = icon('fas', 'book-reader')
+
+.Wrapper
+  = render "calendar"
+  .Chat
+    .MessageField
+      .MessageBox
+        .Message
+          こんにちは。
+        .MessageInfo
+          .MessageInfo__userName
+            太郎
+          .MessageInfo__date
+            2018/08/01 11:50
+    .Footer
+      %form.Form
+        %input.Form__inputContent{type: "text"}
+        %button.Form__submit{type: "submit"}
+          POST
+
+
+
