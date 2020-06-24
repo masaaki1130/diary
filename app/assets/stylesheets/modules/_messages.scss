@@ -15,18 +15,44 @@
   align-items: center;
   padding: 0px 20px;
 
-&__small{
-  height: 40px;
-  width: 150px;
+  &__small {
+    height: 50px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__up {
+      color: #444;
+      font-size: 20px;
+
+    }
+  }
+}
+
+.currentbox {
+  height: 60px;
+  width: 200px;
+  position: absolute;
+  top: 0px;
+  right: 200px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  
+  justify-content: center;
+
+  &__small {
+    height: 50px;
+    width: 150px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
-}
+
 .Icons {
   height: 60px;
-  width: 150px;
+  width: 200px;
   position: absolute;
   top: 0;
   right: 0;
@@ -39,44 +65,51 @@
     line-height: 60px;
     text-align: center;
 
-    &--trash {
-      color: #444;
-    }
-
     &--cog {
-      color: #444;
+      color: $main_color;
     }
 
-    &--plus {
-      color: #fff;
+    &--user {
+      color: $main_color;
+    }
+
+    &--book {
+      color: $main_color;
+    }
+
+    &--reader {
+      color: $main_color;
     }
   }
 }
 
 .Contents {
   height: 90vh;
-  width:900px;
+  width: 900px;
   margin: 0 auto;
   background-color: #fffacd;
   padding: 35px 40px 0px;
 }
-.Icon{
+
+.Icon {
   padding: 40px;
-  color:#ffa500;
-  font-size:30px;
+  color: #ffa500;
+  font-size: 30px;
   text-align: center;
   display: flex;
 
-  &__icons{
+  &__icons {
     height: 60px;
     width: 50px;
     align-items: center;
     justify-content: space-between;
   }
 }
-.Wrapper{
+
+.Wrapper {
   display: flex;
 }
+
 .calendar {
   height: calc(100vh - 60px);
   width: 20vw;
@@ -109,23 +142,26 @@
   width: 100%;
 }
 
-.Message{
+.Message {
   width: 100%;
 }
 
-.MessageInfo{
+.MessageInfo {
   width: 100%;
   display: flex;
   justify-content: flex-end;
+
   &__userName {
     font-size: 12px;
     margin-right: 10px;
   }
+
   &__date {
     font-size: 12px;
   }
 }
-.Footer{
+
+.Footer {
   height: 60px;
   width: 100%;
   padding: 10px;
@@ -134,6 +170,7 @@
 
 .Form {
   display: flex;
+
   &__inputContent {
     height: 40px;
     font-size: 16px;
@@ -142,6 +179,7 @@
     border-radius: 5px;
     border: solid 1px #ff9393;
   }
+
   &__submit {
     height: 40px;
     width: 60px;
