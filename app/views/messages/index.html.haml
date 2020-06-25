@@ -2,21 +2,18 @@
 
 .Wrapper
   = render "calendar"
+
   .Chat
     .MessageField
-      .MessageBox
-        .Message
-          こんにちは。
-        .MessageInfo
-          .MessageInfo__userName
-            太郎
-          .MessageInfo__date
-            2018/08/01 11:50
-    .Footer
-      %form.Form
-        %input.Form__inputContent{type: "text"}
-        %button.Form__submit{type: "submit"}
-          POST
+      = render @messages
 
+    .footer
+      = form_with model: @message, html: {class: "form"}, local: true do |f|
+        .form__contents
+          = f.text_field :content, class: 'form__input', placeholder: 'type a message'
+          = f.label :image, class: 'form__image' do
+            = icon('far', 'image', class: 'form__icon')
+            = f.file_field :image, class: 'from__hiden'
+        = f.submit 'Send', class: 'form__submit'
 
 
