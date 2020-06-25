@@ -1,6 +1,5 @@
 class UsersController < ApplicationController
-  def index
-  end
+
 
   def edit
   end
@@ -13,6 +12,10 @@ class UsersController < ApplicationController
     end
   end
 
+  def show
+    @name = current_user.name
+    @messages =current_user.messages
+  end
   private
 
   def user_params
