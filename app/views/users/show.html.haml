@@ -3,6 +3,10 @@
   .info
     .info__box
       .info__box--name
+      .info__box--current
+        = image_tag current_user.image.to_s, class: 'image'
+    .info__box
+      .info__box--name
         name:
       .info__box--current
         = current_user.name
@@ -11,6 +15,11 @@
         email:
       .info__box--current
         = current_user.email
+    .info__box
+      .info__box--name
+        自己紹介:
+      .info__box--current
+        = current_user.comment
   = render "messages/calendar"
 
   .Chat

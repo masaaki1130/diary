@@ -1,7 +1,6 @@
 .AccountPage {
-  width: 980px;
-  margin: 60px auto;
-  padding: 60px;
+  width: 100vw;
+
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -10,6 +9,7 @@
 }
 .AccountPage__title {
   width: 50%;
+  
   font-size: 14px;
   font-weight: 200;
 
@@ -35,6 +35,7 @@
 
 .AccountPage__form {
   width: 50%;
+  height: 100vh;
 }
 
 .FormField {
