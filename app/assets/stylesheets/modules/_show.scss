@@ -28,3 +28,36 @@
   height: 50px;
 }
 
+.Contents {
+  height: calc(100vh - 90px - 20px);
+  width:900px;
+  margin: 0 auto;
+  background-color: #fffacd;
+}
+.ComentBox {
+  background-color: #fff5ee;
+  margin-bottom: 10px;
+  padding: 10px;
+  color: #444;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.comment {
+  width: 100%;
+}
+
+.MessageInfo {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+  &__userName {
+    font-size: 12px;
+    margin-right: 10px;
+  }
+
+  &__date {
+    font-size: 12px;
+  }
+}
