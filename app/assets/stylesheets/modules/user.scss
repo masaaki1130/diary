@@ -8,7 +8,8 @@
   justify-content: space-between;
 }
 .AccountPage__title {
-  width: 50%;
+  background-image: image-url("diary.jpg");
+  width: 42%;
   
   font-size: 14px;
   font-weight: 200;
@@ -36,6 +37,7 @@
 .AccountPage__form {
   width: 50%;
   height: 100vh;
+  padding: 20px;
 }
 
 .FormField {
