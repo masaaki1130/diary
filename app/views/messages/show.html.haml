@@ -1,0 +1,25 @@
+= render "header"
+
+.Wrapper
+  .Contents
+    .MessageBox
+      .Message
+        %p.meassage__content
+          =@message.content
+        .MessageInfo
+          .MessageInfo__userName
+            = @message.user.name
+          .MessageInfo__date
+            = @message.created_at.strftime("%Y年%m月%d日 %H時%M分")
+    .comenter
+      コメント投稿
+      = form_with model: @comment, html: {class: "form"}, local: true do |f|
+        .comenter__form
+          = f.text_field :text, class: 'form__input', placeholder: 'コメント入力'
+        = f.submit 'コメントする', class: 'form__submit'
+    .ComentBox
+      .comment
+        - if @comments
+          - @comments.each do |comment|
+            %p.comment__content
+              = comment.text
