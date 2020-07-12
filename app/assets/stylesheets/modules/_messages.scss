@@ -151,6 +151,11 @@
   display: flex;
   justify-content: flex-end;
 
+  &__comment{
+    font-size: 12px;
+    margin-right: 10px;
+  }
+
   &__userName {
     font-size: 12px;
     margin-right: 10px;
