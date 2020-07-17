@@ -1,0 +1,11 @@
+.contents.row
+  .container
+    = form_with model: @message, local: true do |f|
+      %h3
+        投稿する
+        = f.text_area :content, placeholder: "text", rows: "10"
+        = f.label :image, class: 'form__image' do
+          = icon('far', 'image', class: 'form__icon')
+          = f.file_field :image, class: 'from__hiden'
+      = f.submit "SEND"
+      = f.submit "back"

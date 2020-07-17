@@ -1,13 +1,16 @@
 class MessagesController < ApplicationController
 
   def index
+    @messages = Message.includes(:user).order("created_at DESC")
+  end
+
+  def new
     @message = Message.new
-    @messages = Message.all
   end
 
   def create
-    @message = Message.new(message_params)
-    if @message.save
+    Message.create(message_params)
+    if Message.save
       redirect_to root_path, notice: 'メッセージが送信されました'
     else
       redirect_to root_path, notice: 'メッセージを入力してください'

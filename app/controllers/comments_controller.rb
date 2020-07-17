@@ -1,19 +1,13 @@
 class CommentsController < ApplicationController
   def create
     @comment = Comment.create(comment_params)
-    redirect_to "/messages/#{comment.message.id}" 
+    redirect_to "/messages/#{comment.message.id}"
     if @comment.save
-      redirect_to "/messages/#{message.id}", notice: 'コメントが送信されました'
+      redirect_back(fallback_location: root_path)
     else
-      redirect_to "/messages/#{message.id}", notice: 'コメントを入力してください'
+      redirect_back(fallback_location: root_path)
     end
   end
-
-  def show
-    @comment = Comment.new
-    @comments = @message.comments.includes(:user)
-  end
-
 
   private
   def comment_params

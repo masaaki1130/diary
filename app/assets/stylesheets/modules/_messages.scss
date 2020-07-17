@@ -152,7 +152,7 @@
   display: flex;
   justify-content: flex-end;
 
-  &__comment{
+  &__comment {
     font-size: 12px;
     margin-right: 10px;
   }
@@ -165,55 +165,4 @@
   &__date {
     font-size: 12px;
   }
-}
-
-.footer {
-  height: 60px;
-  width: 100%;
-  padding: 10px;
-  background-color: #e5ffcc;
-}
-
-.form {
-  display: flex;
-  justify-content: space-between;
-
-  &__contents {
-    width: 100%;
-    position: relative;
-  }
-
-  &__input {
-    border: none;
-    height: 50px;
-    width: 100%;
-    padding: 0px 45px 0px 15px;
-    border-radius: 10px;
-  }
-
-  &__image {
-    height: 50px;
-    position: absolute;
-    right: 10px;
-  }
-  .fa-image {
-    line-height: 50px;
-    font-size: 25px;
-  }
-  &__submit {
-    background-color: #ffa500;
-    border: none;
-    color: #f08080;
-    font-size: 16px;
-    height: 50px;
-    margin-left: 15px;
-    padding: 0 30px;
-    border-radius: 10px;
-  }
-  &__icon{
-    display: none;
-  }
-}
-.from__hiden{
-  display: none;
 }

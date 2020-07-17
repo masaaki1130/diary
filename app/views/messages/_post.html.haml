@@ -1,0 +1,12 @@
+.exhibitionBtn
+  .exhibitionBtn__box
+    = link_to new_message_path, class: "exhibitionBtn" do
+      %h3
+        投稿する
+
+-# = link_to new_message_path, class: "exhibitionBtn" do
+-#   .exhibitionBtn__box
+-#     = form_with(model: @message, local: true) do |f|
+-#       .exhibitionbox__text
+-#         投稿する
+-#     = render partial: "form", locals: { form: form }
